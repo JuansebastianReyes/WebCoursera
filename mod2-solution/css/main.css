@@ -6,8 +6,82 @@ h1{
 	text-align: center;
 }
 
-.bogota, .madrid, .paris{
-	background-color: gray;
-	color :black;
-	border: 2px solid;
+.box{
+    position: relative;
+    border: 3px solid black;
+    background-color: #808080;
+    width: 90%;
+    height: auto;
+    font-family: Helvetica;
+    color: black
+}
+
+.text{
+    padding:20px;
+	padding-top: 45px;
+	
+}
+
+.subtitle{
+	position: relative;
+    left: 60%;
+    border: 2px solid black;
+    border-right: none;
+    border-top: none;
+    width: 40%;
+    height: 30px;
+    text-align: center;
+    font-size: 150%;
+}
+
+@media (min-width: 992px){
+    #box1{
+        width: 32%;
+        float: left;
+        margin-right:2%;
+    }
+    #box2{
+        width: 32%;
+        float: left;
+        margin-right: 2%;
+    }
+    #box3{
+        width: 32%;
+        float: left;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    #box1{
+        width: 48%;
+        float: left;
+        margin-right:2%;
+        margin-left:1%;
+    }
+    #box2{
+        width: 48%;
+        float: left;
+    }
+    #box3{
+        width: 98%;
+        float: left;
+        margin-left: 1%;
+    }
+}
+@media (max-width: 767px){
+    .box{
+        width: 100%;
+        float: left;
+    }
+}
+
+#chicken{
+    background-color: #FFAB91;
+}
+
+#beef{
+    background-color: #BF360C;
+}
+
+#sushi{
+    background-color: #FFF59D;
 }
