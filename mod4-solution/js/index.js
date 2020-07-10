@@ -1,12 +1,11 @@
-var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
-// Immediately Invoked Function Expression
-// IIFE
-(function (name) {
-  for(var i=0; i<name.length;i++){
-    if(name[i].charAt(0)=='J' || name[i].charAt(0)=='j'){
-      byeSpeak.speak(name[i]);
+(function () {
+  var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+  for(var i=0; i<names.length;i++){
+    var firstLetter = names[i].charAt(0).toLowerCase();
+    if(firstLetter =='j'){
+      byeSpeaker.speak(names[i]);
     }else{
-      helloSpeak.speak(name[i]);
+      helloSpeaker.speak(names[i]);  
     }
   }
-})(names);
+})();

@@ -1,9 +1,9 @@
 (function(window){
-  var helloSpeak={};
+  var helloSpeaker={};
   var speakWord = "Hello";
-  helloSpeak.speak = function (nombre) {
-    console.log (speakWord + " " + nombre);
+  helloSpeaker.speak = function (nombre) {
+    console.log(speakWord + " " + nombre);
  }
- window.helloSpeak = helloSpeak;
+ window.helloSpeaker = helloSpeaker;
 }
 )(window);
